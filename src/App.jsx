@@ -39,7 +39,7 @@ if (res.status === 200) {
 }
 useEffect(()=> {
 
-}, [amount], [phoneNumber] [form])
+}, [amount], [phoneNumber])
 
 
 
