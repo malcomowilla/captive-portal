@@ -9,7 +9,7 @@ const HomePage = () => {
   return (
 <>
 
-<motion.section  whileInView={{opacity: 1}} initial={{opacity: 0}}  transition={{type: 'tween', duration: 4}} className="lg:max-w-full border-2 h-96  relative ">
+<motion.section  whileInView={{opacity: 1}} initial={{opacity: 0}}  transition={{type: 'tween', duration: 4}} className="lg:max-w-full  h-96  relative ">
 
 <div className="bg-wifi h-96  space-x-[80px]  bg-cover bg-center filter contrast-[100%]
  bg-no-repeat  grid-auto-fit grid" >
