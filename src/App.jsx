@@ -1,10 +1,50 @@
 
 import {HomePage, WifiPackages} from '../src/constants/index'
-
-
-
+import { useState, useRef, useEffect } from 'react'
 
 function App() {
+const [form, setForm] = useState(false)
+const [amount, setAmount] = useState('')
+const [phoneNumber, setPhoneNUmber] = useState('')
+const [error, setError] = useState(null)
+const [loading, setLoading] = useState(false)
+
+const formData = {amount:amount,  phone_number:phoneNumber}
+console.log(formData)
+
+const handleSubmit = async (e)=> {
+  e.preventDefault()
+  try {
+    let res = await fetch('http://localhost:3000/stk_push', {
+      method: 'POST',
+      headers:{
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(formData)
+
+    })
+
+    let data = await res.json()
+if (res.status === 200) {
+  setError(null)
+  console.log(data)
+} else {
+  setError('Something went wrong please try again')
+}
+  } catch (error) {
+    setError('An error occured please try again')
+
+    console.log(error)
+  }
+}
+useEffect(()=> {
+
+}, [amount], [phoneNumber] [form])
+
+
+
+
+
 
   return (
 <main>
@@ -12,13 +52,21 @@ function App() {
   <HomePage/>
 </section>
 
-<section>
-<WifiPackages/>
-
+<section className='translate-y-[190px]'>
+<WifiPackages form={form} setForm={setForm}  useRef={useRef}  amount={amount} setAmount={setAmount}  phoneNumber={phoneNumber}  setPhoneNUmber={setPhoneNUmber}
+  handleSubmit={handleSubmit}/>
 </section>
 </main>
   )
 }
 
 export default App
+
+
+
+
+
+
+
+
 

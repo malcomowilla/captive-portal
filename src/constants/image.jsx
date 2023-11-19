@@ -1,5 +1,6 @@
 import routerImage from '../assets/router2.jpeg'
-export {routerImage}
+import wifiImage from '../images/captive-portal.jpeg'
 
+export {routerImage, wifiImage}
 
 
