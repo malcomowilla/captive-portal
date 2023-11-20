@@ -15,7 +15,7 @@ console.log(formData)
 const handleSubmit = async (e)=> {
   e.preventDefault()
   try {
-    let res = await fetch('https://captive-portal.onrender.com/stk_push', {
+    let res = await fetch('https://captive-portal5.onrender.com/stk_push', {
       method: 'POST',
       headers:{
         "Content-Type": "application/json"
@@ -39,7 +39,7 @@ if (res.status === 200) {
 }
 useEffect(()=> {
 
-}, [amount], [phoneNumber])
+}, [amount, phoneNumber])
 
 
 
