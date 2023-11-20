@@ -1,5 +1,4 @@
 
-import {wifiImage} from '../constants/image'
 
 import Form from './Form'
 
@@ -134,7 +133,7 @@ const WifiPackageCards = ({form, setForm, amount, setAmount , phoneNumber,  setP
            w-screen" ></div>
           <section className="absolute w-screen max-sm:flex  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 ">
             <Form form={form} setForm={setForm}   amount={amount} setAmount={setAmount}  phoneNumber={phoneNumber} 
-             setPhoneNUmber={setPhoneNumber} handleSubmit={handleSubmit} />
+             setPhoneNumber={setPhoneNumber} handleSubmit={handleSubmit} />
           </section>
         </>
       )}
