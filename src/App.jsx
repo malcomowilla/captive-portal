@@ -9,7 +9,7 @@ const [phoneNumber, setPhoneNUmber] = useState('')
 const [error, setError] = useState(null)
 const [loading, setLoading] = useState(false)
 
-const formData = {amount:amount,  phone_number:phoneNumber}
+const formData = {amount:amount,  phoneNumber:phoneNumber}
 console.log(formData)
 
 const handleSubmit = async (e)=> {
