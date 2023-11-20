@@ -6,7 +6,7 @@ import WifiPackageCards from "../components/WifiPackageCards"
 
 
 
-const WifiPackages = ({form, setForm,  amount, setAmount , phoneNumber,  setPhoneNUmber, handleSubmit}) => {
+const WifiPackages = ({form, setForm,  amount, setAmount , phoneNumber,  setPhoneNumber, handleSubmit}) => {
   return (
 
 <section >
@@ -14,7 +14,7 @@ const WifiPackages = ({form, setForm,  amount, setAmount , phoneNumber,  setPhon
 
 <p className="text-center font-montserrat text-xl">Wifi Packages</p>
 
-    <WifiPackageCards form={form} setForm={setForm} useRef={useRef} amount={amount} setAmount={setAmount} phoneNumber={phoneNumber} setPhoneNUmber={setPhoneNUmber} 
+    <WifiPackageCards form={form} setForm={setForm} useRef={useRef} amount={amount} setAmount={setAmount} phoneNumber={phoneNumber} setPhoneNumber={setPhoneNumber} 
     handleSubmit={handleSubmit}
      />
 </div>

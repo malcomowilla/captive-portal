@@ -6,7 +6,7 @@ import Form from './Form'
 import Lottie from "lottie-react"
 import wifi from '../assets/wifi.json'
 
-const WifiPackageCards = ({form, setForm, amount, setAmount , phoneNumber,  setPhoneNUmber, handleSubmit }) => {
+const WifiPackageCards = ({form, setForm, amount, setAmount , phoneNumber,  setPhoneNumber, handleSubmit }) => {
 
 
 
@@ -134,7 +134,7 @@ const WifiPackageCards = ({form, setForm, amount, setAmount , phoneNumber,  setP
            w-screen" ></div>
           <section className="absolute w-screen max-sm:flex  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 ">
             <Form form={form} setForm={setForm}   amount={amount} setAmount={setAmount}  phoneNumber={phoneNumber} 
-             setPhoneNUmber={setPhoneNUmber} handleSubmit={handleSubmit} />
+             setPhoneNUmber={setPhoneNumber} handleSubmit={handleSubmit} />
           </section>
         </>
       )}

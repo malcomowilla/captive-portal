@@ -5,7 +5,7 @@ import { useState, useRef, useEffect } from 'react'
 function App() {
 const [form, setForm] = useState(false)
 const [amount, setAmount] = useState('')
-const [phoneNumber, setPhoneNUmber] = useState('')
+const [phoneNumber, setPhoneNumber] = useState('')
 const [error, setError] = useState(null)
 const [loading, setLoading] = useState(false)
 
@@ -53,7 +53,7 @@ useEffect(()=> {
 </section>
 
 <section className='translate-y-[190px]'>
-<WifiPackages form={form} setForm={setForm}  useRef={useRef}  amount={amount} setAmount={setAmount}  phoneNumber={phoneNumber}  setPhoneNUmber={setPhoneNUmber}
+<WifiPackages form={form} setForm={setForm}  useRef={useRef}  amount={amount} setAmount={setAmount}  phoneNumber={phoneNumber}  setPhoneNumber={setPhoneNumber}
   handleSubmit={handleSubmit}/>
 </section>
 </main>
