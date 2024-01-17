@@ -15,7 +15,8 @@ const Form = ({form, setForm, amount, setAmount , phoneNumber,  setPhoneNumber, 
 <label >Phone Number</label>
 <input type="text" className="border-2 w-fit rounded-2xl outline-none"  required name="phone_number" value={phoneNumber} onChange={(e)=> setPhoneNumber(e.target.value)}/><br /><br />
 <label >Amount</label>
-<input type="number" className="border-2 w-fit  rounded-2xl translate-y-[-5px] outline-none"  required value={amount} onChange={(e)=> setAmount(e.target.value)} />
+<input type="number" className="border-2 w-fit  rounded-2xl translate-y-[-5px] outline-none" 
+ required value={amount} onChange={(e)=> setAmount(e.target.value)} />
 <button type="submit" className="border-4 ring-2 ring-green-600 w-fit text-xs bg-gray-200 rounded-2xl "  >Pay Now</button>
 <button className="" onClick={()=> setForm(!form)} >x</button>
         </form>
