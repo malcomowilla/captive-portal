@@ -29,18 +29,19 @@ const WifiPackageCards = ({form, setForm, amount, setAmount , phoneNumber,  setP
 
      <div className="shadow-2xl w-5/6 h-[300px] grid grid-auto-fit bg-orange-600 rounded-2xl " >
 
- <Lottie   animationData={wifi} className=' md:translate-y-[-50px]  translate-y-[-200px]   w-full  sm:translate-y-[-120px] ' />
+ <Lottie   animationData={wifi} className=' md:translate-y-[-80px]  translate-y-[-200px]   w-full  sm:translate-y-[-120px] ' />
 
-<div className=' max-md:translate-y-[-150px]    xl:translate-y-[-350px] max-sm:translate-y-[-250px]   shadow-2xl bg-white 
-w-[150px] h-20 flex flex-col justify-center items-center relative z-40 bottom-9 m-auto '>
+<div className='lg:translate-y-[-350px]   md:translate-y-[-200px]   shadow-2xl bg-white 
+w-[150px] h-20 flex flex-col justify-center items-center relative z-40 bottom-9 m-auto  '>
 
 <h1 className='text-sm text-cyan-300 font-serif font-bold '>Basic</h1>
 <hr className='border-2 w-20 mx-auto border-gray-300'/>
 <p className='text-xs font-montserrat'> <span className='text-4xl text-cyan-300'>4</span> mbs  <br />unlimited traffic</p>
 </div>
-<p className='   md:translate-y-[-100px]  translate-y-[-350px] max-sm:translate-y-[-250px] 
+<div className='w-full flex justify-center flex-col md:translate-y-[-390px]'>
+<p className='   md:translate-y-[190px]  translate-y-[-350px]  
  text-sm w-auto m-auto font-montserrat font-semibold hover:text-4xl duration-300'>20 bob</p>
-<button className={` -md:translate-y-[-170px]   translate-y-[-350px]  sm:translate-y-[-240px]   border-2 w-[80px]
+<button className={` md:translate-y-[190px]   translate-y-[-350px]  sm:translate-y-[-240px]   border-2 w-[80px]
  h-8 text-sm mx-auto rounded-lg ring-cyan-200 ring-2 hover:ring-black
 
 
@@ -50,7 +51,7 @@ w-[150px] h-20 flex flex-col justify-center items-center relative z-40 bottom-9 
 
 
 
-
+        </div>
 
         
 
@@ -59,10 +60,10 @@ w-[150px] h-20 flex flex-col justify-center items-center relative z-40 bottom-9 
 
         <div className="shadow-2xl    w-5/6 h-[300px] bg-black rounded-2xl" >
 
-        <Lottie   animationData={wifi} className=' max-md:translate-y-[-70px]     max-sm:translate-y-[-120px] 
+        <Lottie   animationData={wifi} className=' md:translate-y-[-70px]   sm:translate-y-[-120px] 
         translate-y-[-200px] w-full  max-sm:w-full ' />
 
-<div className=' max-md:translate-y-[-180px]    translate-y-[-350px]  max-sm:translate-y-[-280px]  
+<div className=' md:translate-y-[-180px]    translate-y-[-350px]  sm:translate-y-[-280px]  
   shadow-2xl bg-white w-[150px] h-20 flex flex-col justify-center items-center relative z-40 bottom-9 m-auto '>
 
 <h1 className='text-sm text-cyan-300 font-serif font-bold'>Platinum</h1>
@@ -75,7 +76,7 @@ w-[150px] h-20 flex flex-col justify-center items-center relative z-40 bottom-9 
 
 <div className='w-full flex justify-center'>
 
-<p className=' max-md:translate-y-[-110px]    translate-y-[-350px]  max-sm:translate-y-[-250px]
+<p className=' md:translate-y-[-120px]    translate-y-[-350px]  max-sm:translate-y-[-250px]
   text-sm w-auto  font-montserrat font-semibold hover:text-4xl duration-300 text-white'>30 bob</p>
 
 
@@ -83,7 +84,7 @@ w-[150px] h-20 flex flex-col justify-center items-center relative z-40 bottom-9 
 
 <div className='w-full flex'>
   
-  <button className='   max-md:translate-y-[-190px]    translate-y-[-350px] 
+  <button className='   md:translate-y-[-190px]    translate-y-[-350px] 
    max-sm:translate-y-[-240px]   border-2 w-[80px] h-8 text-sm mx-auto rounded-lg ring-cyan-200
     ring-2 hover:ring-black  text-white' onClick={handleForm}>buy now</button>
 </div>
@@ -100,9 +101,9 @@ w-[150px] h-20 flex flex-col justify-center items-center relative z-40 bottom-9 
 
 
 
-        <Lottie   animationData={wifi} className='  max-md:translate-y-[-50px]     max-sm:translate-y-[-130px]   translate-y-[-200px] w-full  max-sm:w-full ' />
+        <Lottie   animationData={wifi} className=' md:translate-y-[-50px]     max-sm:translate-y-[-130px]   translate-y-[-200px] w-full  max-sm:w-full ' />
 
-<div className='      max-md:translate-y-[-150px]     translate-y-[-350px]     max-sm:translate-y-[-280px]  
+<div className='      md:translate-y-[-150px]     translate-y-[-350px]     max-sm:translate-y-[-280px]  
  shadow-2xl bg-white w-[150px] h-20 flex flex-col justify-center items-center relative z-40 bottom-9 m-auto '>
 
 <h1 className='text-sm text-cyan-300 font-serif font-bold'>Premium</h1>
@@ -110,6 +111,8 @@ w-[150px] h-20 flex flex-col justify-center items-center relative z-40 bottom-9 
 <p className='    text-xs font-montserrat'> <span className='text-4xl text-cyan-300'>10</span> mbs  <br />unlimited traffic</p>
 </div>
 
+
+<div className='translate-y-[200px]'>
 <div className='w-full flex justify-center'>
 
 <p className='max-md:translate-y-[-100px]  translate-y-[-350px] max-sm:translate-y-[-250px] text-sm w-auto
@@ -125,6 +128,7 @@ w-[150px] h-20 flex flex-col justify-center items-center relative z-40 bottom-9 
 </div>
 
 
+        </div>
         </div>
       
       {/* <section          
