@@ -12,7 +12,7 @@ const WifiPackages = ({form, setForm,  amount, setAmount , phoneNumber,  setPhon
 <section >
 <div className=" mt-11  w-full h-[630px]">
 
-<p className="text-center font-montserrat text-xl">Wifi Packages</p>
+<p className="text-center font-montserrat text-xl google-font">Wifi Packages</p>
 
     <WifiPackageCards form={form} setForm={setForm} useRef={useRef} amount={amount} setAmount={setAmount} phoneNumber={phoneNumber} setPhoneNumber={setPhoneNumber} 
     handleSubmit={handleSubmit}
