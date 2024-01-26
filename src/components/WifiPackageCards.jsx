@@ -27,18 +27,23 @@ const WifiPackageCards = ({form, setForm, amount, setAmount , phoneNumber,  setP
       
 
 
-     <div className="shadow-2xl w-5/6 h-[300px] grid grid-auto-fit bg-orange-600 rounded-2xl " >
+     <div className="shadow-2xl w-5/6 h-[300px] grid grid-auto-fit bg-orange-600 rounded-2xl" >
+<div className='max-sm:translate-y-[-100px]'>
+<Lottie   animationData={wifi} className=' md:translate-y-[-80px]  lg:translate-y-[-140px]   w-full  ' />
 
- <Lottie   animationData={wifi} className=' md:translate-y-[-80px]  lg:translate-y-[-140px]   w-full  sm:translate-y-[-120px] ' />
 
-<div className='lg:translate-y-[-350px]   md:translate-y-[-200px]   shadow-2xl bg-white 
+</div>
+
+<div className='lg:translate-y-[-350px]   md:translate-y-[-200px]   
+shadow-2xl bg-white  max-sm:translate-y-[-280px]
 w-[150px] h-20 flex flex-col justify-center items-center relative z-40 bottom-9 m-auto  '>
 
 <h1 className='text-sm text-cyan-300 font-serif font-bold '>Basic</h1>
 <hr className='border-2 w-20 mx-auto border-gray-300'/>
 <p className='text-xs font-montserrat'> <span className='text-4xl text-cyan-300'>4</span> mbs  <br />unlimited traffic</p>
 </div>
-<div className='w-full flex justify-center flex-col md:translate-y-[-390px] lg:translate-y-[-550px]'>
+
+<div className='w-full flex justify-center flex-col md:translate-y-[-390px] lg:translate-y-[-550px] max-sm:translate-y-[70px]'>
 <p className='   md:translate-y-[190px]  translate-y-[-350px]  
  text-sm w-auto m-auto font-montserrat font-semibold hover:text-4xl duration-300'>20 bob</p>
 <button className={` md:translate-y-[190px]   translate-y-[-350px]  sm:translate-y-[-240px]   border-2 w-[80px]
@@ -61,17 +66,18 @@ w-[150px] h-20 flex flex-col justify-center items-center relative z-40 bottom-9 
         <div className="shadow-2xl    w-5/6 h-[300px] bg-black rounded-2xl" >
 
         <Lottie   animationData={wifi} className=' md:translate-y-[-70px]   sm:translate-y-[-120px] 
-         lg:translate-y-[-140px] w-full  max-sm:w-full' />
+         lg:translate-y-[-140px] w-full  max-sm:w-full max-sm:translate-y-[-100px]' />
 
 <div className=' md:translate-y-[-180px]    lg:translate-y-[-350px]  sm:translate-y-[-120px]  
-  shadow-2xl bg-white w-[150px] h-20 flex flex-col justify-center items-center relative z-40 bottom-9 m-auto '>
+  shadow-2xl bg-white w-[150px] h-20 flex flex-col justify-center items-center relative 
+  z-40 bottom-9 m-auto  max-sm:translate-y-[-300px] '>
 
 <h1 className='text-sm text-cyan-300 font-serif font-bold'>Platinum</h1>
 <hr className='border-2 w-20 mx-auto border-gray-300'/>
 <p className='text-xs font-montserrat'> <span className='text-4xl text-cyan-300'>5</span> mbs  <br />unlimited traffic</p>
 </div >
 
-<div className='sm:translate-y-[200px] lg:translate-y-[-150px]'>
+<div className='sm:translate-y-[200px] lg:translate-y-[-150px] max-sm:translate-y-[-100px]'>
 
 <div className='w-full flex justify-center'>
 
