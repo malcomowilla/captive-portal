@@ -70,7 +70,7 @@ w-[150px] h-35 flex flex-col justify-center items-center relative z-40 bottom-9 
 
 <div className=' md:translate-y-[-180px]    lg:translate-y-[-350px]  sm:translate-y-[-120px]  
   shadow-2xl bg-white w-[150px] h-35 flex flex-col justify-center items-center relative 
-  z-40 bottom-9 m-auto  max-sm:translate-y-[-300px]  '>
+  z-40 bottom-9 m-auto  max-sm:translate-y-[-300px]'>
 
 <h1 className='text-sm text-cyan-300  lg:text-xl   font-bold google-font'>Platinum</h1>
 <hr className='border-2 w-20 mx-auto border-gray-300'/>
@@ -79,7 +79,7 @@ w-[150px] h-35 flex flex-col justify-center items-center relative z-40 bottom-9 
 unlimited traffic</span></p>
 </div >
 
-<div className='sm:translate-y-[200px] lg:translate-y-[-180px] max-sm:translate-y-[-100px]'>
+<div className='md:translate-y-[-15px] lg:translate-y-[-180px] max-sm:translate-y-[-100px]'>
 
 <div className='w-full flex justify-center'>
 

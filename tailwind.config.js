@@ -10,7 +10,9 @@ export default {
       fontFamily:{
         montserrat:['Montserrat', 'sans-serif']
       }
-    }
+    }, daisyui: {
+      themes: ['light'],
+    },
     
   },
   plugins: [
