@@ -11,9 +11,7 @@ export default {
         montserrat:['Montserrat', 'sans-serif']
       }
     },
-    // daisyui: {
-    //   themes: ['light', 'dark']
-    //  },
+    
   },
   plugins: [
     require('@shrutibalasa/tailwind-grid-auto-fit'),
