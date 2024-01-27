@@ -6,7 +6,7 @@ function App() {
 const [form, setForm] = useState(false)
 const [amount, setAmount] = useState('')
 const [phoneNumber, setPhoneNumber] = useState('')
-const [error, setError] = useState(null)
+const [error, setError] = useState(false)
 const [loading, setLoading] = useState(false)
 const [hasPaid, sethasPaid] = useState(false)
 
@@ -29,7 +29,7 @@ const handleSubmit = async (e)=> {
 
     let data = await res.json()
 if (res.status === 200) {
-  setError(null)
+  setError(false)
   console.log(data)
   setLoading(false)
   sethasPaid(true)
@@ -38,7 +38,7 @@ if (res.status === 200) {
   
   
 } else {
-  setError('Something went wrong please try again')
+  setError(true)
   sethasPaid(false)
 
 }
@@ -60,7 +60,7 @@ useEffect(()=> {
 
   return (
 <main>
-<LoaderContext.Provider value={{loading, hasPaid}}>
+<LoaderContext.Provider value={{loading, hasPaid, error}}>
 
 <section className=''>
   <HomePage/>
