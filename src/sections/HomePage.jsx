@@ -15,7 +15,8 @@ const HomePage = () => {
 <div className="bg-wifi  md:bg-wifi  h-96  space-x-[80px]  bg-cover bg-center filter contrast-[100%]
  bg-no-repeat  grid-auto-fit grid" >
 
-<div className=" w-fit h-fit   ml-[100px] mt-[50px] ">
+<div className=" w-fit h-fit   ml-[100px] mt-[50px]  text-primary-content">
+  <p className='text-8xl font-thin  google-font duration-300 '>Fibre 8</p><br /><br />
 <motion.p whileHover={{scale: 1.5}} className="text-4xl font-thin  google-font duration-300">Providing Finest<br/>
      <span className=" lg:font-bold text-4xl lg:text-6xl md:font-semibold">Internet Services</span></motion.p>
 

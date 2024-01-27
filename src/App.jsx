@@ -53,8 +53,9 @@ useEffect(()=> {
   <HomePage/>
 </section>
 
-<section className='translate-y-[190px]'>
-<WifiPackages form={form} setForm={setForm}  useRef={useRef}  amount={amount} setAmount={setAmount}  phoneNumber={phoneNumber}  setPhoneNumber={setPhoneNumber}
+<section className='translate-y-[190px]' >
+<WifiPackages form={form} setForm={setForm}  useRef={useRef}  amount={amount} setAmount={setAmount} 
+ phoneNumber={phoneNumber}  setPhoneNumber={setPhoneNumber}
   handleSubmit={handleSubmit}/>
 </section>
 </main>

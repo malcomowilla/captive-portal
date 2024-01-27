@@ -16,6 +16,11 @@ font-family: 'Shadows Into Light', cursive;
     }
 }
 
+@layer base{
+    body{
+        @apply bg-white
+    }
+}
 
 
 

@@ -4,3 +4,7 @@ import wifiImage from '../images/captive-portal.jpeg'
 export {routerImage, wifiImage}
 
 
+
+
+
+
