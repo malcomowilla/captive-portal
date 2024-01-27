@@ -19,6 +19,7 @@
     "register-service-worker": "^1.7.2"
   },
   "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
     "@shrutibalasa/tailwind-grid-auto-fit": "^1.1.0",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",

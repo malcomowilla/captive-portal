@@ -24,7 +24,7 @@ const Form = ({form, setForm, amount, setAmount , phoneNumber,  setPhoneNumber, 
  required value={amount} onChange={(e)=> setAmount(e.target.value)} />
 <button type="submit" className="border-4 ring-2 ring-green-600   w-fit text-xs bg-gray-200
  rounded-2xl text-secondary-content"  >Pay Now</button>
-<button className="text-secondary-content  text-2xl" onClick={()=> setForm(!form)} >x</button>
+<button className="text-white  text-2xl" onClick={()=> setForm(!form)} >x</button>
         </form>
     </div>
   )

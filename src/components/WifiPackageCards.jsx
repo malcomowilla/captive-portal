@@ -79,7 +79,7 @@ w-[150px] h-35 flex flex-col justify-center items-center relative z-40 bottom-9 
 unlimited traffic</span></p>
 </div >
 
-<div className='sm:translate-y-[200px] lg:translate-y-[-150px] max-sm:translate-y-[-100px]'>
+<div className='sm:translate-y-[200px] lg:translate-y-[-180px] max-sm:translate-y-[-100px]'>
 
 <div className='w-full flex justify-center'>
 
