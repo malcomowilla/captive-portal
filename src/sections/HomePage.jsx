@@ -25,7 +25,7 @@ const HomePage = () => {
 
 
 <motion.div    
- onClick={()=> setRotate(!rotate)}  className=" object-contain  h-fit w-fit  z-30 mix-blend-multiply">
+ onClick={()=> setRotate(!rotate)}  className="object-contain  h-fit w-fit  z-30 mix-blend-multiply">
 <motion.img  src={routerImage} initial={{
   opacity: 0,
   y: -900
@@ -42,7 +42,7 @@ transition={{
 }}
 
 
- className=" mix-blend-multiply "  />
+ className=" mix-blend-multiply  h-fit w-fit"  />
 </motion.div>
 
 
