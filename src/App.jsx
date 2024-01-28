@@ -1,3 +1,4 @@
+import OneSignal from 'react-onesignal';
 
 import {HomePage, WifiPackages} from '../src/constants/index'
 import { useState, useRef, useEffect } from 'react'
@@ -12,6 +13,17 @@ const [hasPaid, sethasPaid] = useState(false)
 
 const formData = {amount:amount,  phone_number:phoneNumber}
 console.log(formData)
+
+
+
+useEffect(() => {
+OneSignal.init({
+  appId: "2df033aa-8ce1-48bc-b8ad-af4915a86470"
+
+})
+}, []);
+
+
 
 const handleSubmit = async (e)=> {
   e.preventDefault()
