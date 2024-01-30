@@ -58,40 +58,24 @@ const handleSubmit = async (e)=> {
     
 
     let data = await res.json()
-    setError(false)
-   console.log(data)
-   setLoading(false)
+if (res.status === 200) {
+  setError(false)
+  console.log(data)
+  setLoading(false)
   sethasPaid(true)
-   setPhoneNumber('')
-   setAmount('')
-
-
-
-
-
-
-
-
-
-// if (res.status === 200) {
-//   setError(false)
-//   console.log(data)
-//   setLoading(false)
-//   sethasPaid(true)
-//   setPhoneNumber('')
-//   setAmount('')
+  setPhoneNumber('')
+  setAmount('')
   
   
-// } else {
-//   setError(true)
-//   sethasPaid(false)
+} else {
+  setError(true)
+  sethasPaid(false)
 
-// }
+}
   } catch (error) {
     setError('An error occured please try again')
     setLoading(false)
-    setError(true)
-       sethasPaid(false)
+
     console.log(error)
   }
 }
