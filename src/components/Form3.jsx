@@ -3,10 +3,10 @@ import {useContext} from 'react'
 import LoaderContext from '../context/LoaderContext'
 
 
-const Form = () => {
+const Form3 = () => {
 
-  const {loading, hasPaid, error, form, setForm , phoneNumber,  setPhoneNumber,
-     handleSubmit, setError, sethasPaid} = useContext(LoaderContext)
+  const {loading, hasPaid, error, form3, setForm3 , phoneNumber3,  setPhoneNumber3,
+     handleSubmit3, setError, sethasPaid} = useContext(LoaderContext)
   
   return (
 
@@ -16,15 +16,15 @@ const Form = () => {
         <p className="translate-x-[40px] font-montserrat tracking-widest text-white">Pay with <span className="text-green-400 
         font-bold"
         >Mpesa</span></p>
-        <form className="flex flex-col  justify-center items-center " onSubmit={handleSubmit}>
+        <form className="flex flex-col  justify-center items-center " onSubmit={handleSubmit3}>
 <label className='text-white ' >Phone Number</label>
-<input type="text" className="border-2 w-fit rounded-2xl outline-none  focus:text-secondary-content
+<input type="text" className="border-2 w-fit rounded-2xl outline-none  focus:text-base-content
  bg-transparent"  required name="phone_number"
- value={phoneNumber} onChange={(e)=> setPhoneNumber(e.target.value)}/><br /><br />
+ value={phoneNumber3} onChange={(e)=> setPhoneNumber3(e.target.value)}/><br /><br />
 
 <button type="submit" className="border-4 ring-2 ring-green-600   w-fit text-xs bg-gray-200
  rounded-2xl text-secondary-content"  >Pay Now</button>
-<button className="text-white  text-2xl"   onClick={()=> setForm(!form)} >
+<button className="text-white  text-2xl"   onClick={()=> setForm3(!form3)} >
 x
 
 </button>
@@ -77,7 +77,7 @@ x
 
 }
 
-export default Form
+export default Form3
 
 
 

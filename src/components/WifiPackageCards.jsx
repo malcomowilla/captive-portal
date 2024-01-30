@@ -1,25 +1,33 @@
 
 
 import Form from './Form'
-
+import LoaderContext from '../context/LoaderContext'
+import {useContext} from 'react'
+import Form2 from './Form2'
 import Lottie from "lottie-react"
 import wifi from '../assets/wifi.json'
+import Form3 from './Form3'
 
-const WifiPackageCards = ({form, setForm, amount, setAmount , phoneNumber,  setPhoneNumber, handleSubmit }) => {
 
+const WifiPackageCards = () => {
+
+  const { form, setForm, form2, setForm2, form3, setForm3} = useContext(LoaderContext)
 
 
   const handleForm = ()=> {
     setForm(!form)
-
-
-
-    // sectionElement.current.classList.toggle('opacity-0')
-    // sectionElement.current.classList.toggle('translate-y-[500px]');
-
-    
-
   
+  }
+
+
+
+  const handleForm2 = ()=> {
+    setForm2(!form2)
+  
+  }
+
+  const handleForm3 = ()=> {
+    setForm3(!form3)
   }
   return (
 
@@ -40,8 +48,10 @@ w-[150px] h-35 flex flex-col justify-center items-center relative z-40 bottom-9 
 
 <h1 className='text-sm text-cyan-300 font-bold lg:text-xl '>Basic</h1>
 <hr className='border-2 w-20 mx-auto border-gray-300'/>
-<p className='text-xs font-bold lg:text-xl'> <span className='text-4xl text-cyan-300'>4</span> <span className='text-primary-content'>mbs  <br />unlimited traffic</span></p>
+<p className='text-xs font-bold lg:text-xl'> <span className='text-4xl text-cyan-300'>4</span> <span 
+className='text-primary-content'>mbs  <br />unlimited traffic</span></p>
 </div>
+
 
 <div className='w-full flex justify-center flex-col md:translate-y-[-390px] lg:translate-y-[-550px] max-sm:translate-y-[70px]'>
 <p className='   md:translate-y-[190px]  translate-y-[-350px]  
@@ -74,12 +84,12 @@ w-[150px] h-35 flex flex-col justify-center items-center relative z-40 bottom-9 
 
 <h1 className='text-sm text-cyan-300  lg:text-xl   font-bold google-font'>Platinum</h1>
 <hr className='border-2 w-20 mx-auto border-gray-300'/>
-<p className='text-xs google-font lg:text-xl font-bold'> <span className='text-4xl text-cyan-300 google-font'>5</span>
+<p className='text-xs google-font lg:text-xl font-bold'> <span className='text-4xl text-cyan-300 google-font'>6</span>
  <span className='text-primary-content'>mbs  <br />
 unlimited traffic</span></p>
 </div >
 
-<div className='md:translate-y-[-15px] lg:translate-y-[-180px] max-sm:translate-y-[-100px]'>
+<div className='md:translate-y-[-15px] lg:translate-y-[-180px]  max-sm:translate-y-[-100px]'>
 
 <div className='w-full flex justify-center'>
 
@@ -93,7 +103,7 @@ unlimited traffic</span></p>
   
   <button className='   md:translate-y-[-190px]    translate-y-[-350px] 
    max-sm:translate-y-[-240px]   border-2 w-[80px] h-8 text-sm mx-auto rounded-lg ring-cyan-200
-    ring-2 hover:ring-black  text-white' onClick={handleForm}>buy now</button>
+    ring-2 hover:ring-black  text-white' onClick={handleForm2}>buy now</button>
 </div>
 
         </div>
@@ -133,22 +143,48 @@ unlimited traffic</span></p>
   <button className=' max-md:translate-y-[-170px] translate-y-[-350px] max-sm:translate-y-[-240px]
     border-2 w-[80px] h-8 text-sm mx-auto
      rounded-lg ring-cyan-200 ring-2 hover:ring-black  text-primary-content' 
-      onClick={handleForm}>buy now</button>
+      onClick={handleForm3}>buy now</button>
 </div>
 
 
         </div>
         </div>
-      
-      {/* <section          
- className='w-screen  border-4 backdrop-blur-md relative bottom-[400px]  grid grid-auto-fit z-50 h-[500px] translate-x-[-13px]  
-  '
-      
-      >
-      {form && <Form  form={form} setForm={setForm}/>}  
-      </section>
-       */}
-{/* backdrop-blur-lg */}
+     
+
+
+
+
+
+{form3 && (
+        <>
+          <div className="fixed translate-x-[-15px] max-sm:absolute max-sm:h-screen  
+           inset-0 lg:h-full bg-black bg-opacity-50 backdrop-blur-2xl  z-50 
+           w-screen" ></div>
+          <section className="absolute w-screen max-sm:flex  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 ">
+            <Form3  />
+          </section>
+        </>
+      )}
+
+
+
+
+
+
+
+
+{form2 && (
+        <>
+          <div className="fixed translate-x-[-15px] max-sm:absolute max-sm:h-screen  
+           inset-0 lg:h-full bg-black bg-opacity-50 backdrop-blur-2xl  z-50 
+           w-screen" ></div>
+          <section className="absolute w-screen max-sm:flex  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 ">
+            <Form2  />
+          </section>
+        </>
+      )}
+
+
 
 {form && (
         <>
@@ -156,12 +192,16 @@ unlimited traffic</span></p>
            inset-0 lg:h-full bg-black bg-opacity-50 backdrop-blur-2xl  z-50 
            w-screen" ></div>
           <section className="absolute w-screen max-sm:flex  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 ">
-            <Form form={form} setForm={setForm}   amount={amount} setAmount={setAmount}  phoneNumber={phoneNumber} 
-             setPhoneNumber={setPhoneNumber} handleSubmit={handleSubmit} />
+            <Form  />
           </section>
         </>
       )}
+
+
         </div>
+
+
+
 
   )
 
