@@ -24,11 +24,11 @@ const formData2 = {amount2:30,  phone_number:phoneNumber2}
 const formData3 = {amount3:50,  phone_number:phoneNumber3}
 
 
-// console.log(formData)
+console.log(formData)
 
 
-// console.log(formData2)
-// console.log(formData3)
+console.log(formData2)
+console.log(formData3)
 
 
 useEffect(() => {

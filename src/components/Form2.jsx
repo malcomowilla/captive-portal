@@ -6,6 +6,7 @@ import LoaderContext from '../context/LoaderContext'
 const Form2 = () => {
     const {loading, hasPaid, error, form2, setForm2, phoneNumber2,  setPhoneNumber2,
         handleSubmit2, sethasPaid, setError} = useContext(LoaderContext)
+        
   return (
     <div className="w-[500px]  aspect-[10/5] m-auto relative  max-sm:top-[200px] flex-1
     shadow-2xl items-center grid justify-center   max-sm:translate-x-[-15px]  rounded-2xl opacity-80">
@@ -17,10 +18,7 @@ const Form2 = () => {
 <input type="text" className="border-2 w-fit rounded-2xl outline-none  focus:neutral-content
 bg-transparent"  required name="phone_number"
 value={phoneNumber2} onChange={(e)=> setPhoneNumber2(e.target.value)}/><br /><br />
-{/* <input   type="number" className="border-2 w-fit   rounded-2xl translate-y-[-5px] outline-none focus:text-white
-bg-transparent" 
 
-required  onChange={()=> setAmount2(30)} /> */}
 <button type="submit" className="border-4 ring-2 ring-green-600   w-fit text-xs bg-gray-200
 rounded-2xl text-secondary-content"  >Pay Now</button>
 <button className="text-white  text-2xl"   onClick={()=> setForm2(!form2)} >
