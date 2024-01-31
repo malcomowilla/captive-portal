@@ -2,7 +2,7 @@ import OneSignal from 'react-onesignal';
 
 import {HomePage, WifiPackages} from '../src/constants/index'
 
-import { useState, useRef, useEffect } from 'react'
+import { useState,  useEffect } from 'react'
 import LoaderContext from '../src/context/LoaderContext'
 function App() {
 const [form, setForm] = useState(false)
@@ -18,13 +18,12 @@ const [amount3, setAmount3] = useState('')
 const [phoneNumber3, setPhoneNumber3] = useState('')
 const [form3, setForm3] = useState(false)
 
-
 const formData = {amount:20,  phone_number:phoneNumber}
-const formData2 = {amount2:30,  phone_number:phoneNumber2}
-const formData3 = {amount3:50,  phone_number:phoneNumber3}
+const formData2 = {amount:30,  phone_number:phoneNumber2}
+const formData3 = {amount:50,  phone_number:phoneNumber3}
 
 
-console.log(formData)
+// console.log(formData)
 
 
 console.log(formData2)
@@ -38,7 +37,8 @@ OneSignal.init({
 })
 }, []);
 
-
+// https://captive-portal5.onrender.com/stk_push
+// http://localhost:3000
 
 const handleSubmit = async (e)=> {
   e.preventDefault()
@@ -65,7 +65,6 @@ if (res.status === 200) {
   sethasPaid(true)
   setPhoneNumber('')
   setAmount('')
-  
   
 } else {
   setError(true)
@@ -124,7 +123,7 @@ if (res.status === 200) {
 
 }
   } catch (error) {
-    setError('An error occured please try again')
+    setError(true)
     setLoading(false)
 
     console.log(error)
@@ -174,7 +173,7 @@ if (res.status === 200) {
 
 }
   } catch (error) {
-    setError('An error occured please try again')
+    setError(true)
     setLoading(false)
 
     console.log(error)
@@ -197,7 +196,7 @@ useEffect(()=> {
 </section>
 
 <section className='translate-y-[190px] md:h-full' >
-<WifiPackages  useRef={useRef}  
+<WifiPackages    
  
   />
 

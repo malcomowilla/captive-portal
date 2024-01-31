@@ -29,6 +29,8 @@ const WifiPackageCards = () => {
   const handleForm3 = ()=> {
     setForm3(!form3)
   }
+
+  
   return (
 
     <div className="w-full h-96 grid grid-auto-fit  gap-10 mt-[70px] translate-x-5  " >
