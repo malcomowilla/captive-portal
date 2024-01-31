@@ -131,7 +131,7 @@ if (res.status === 200) {
 }
 useEffect(()=> {
 
-}, [amount2, phoneNumber2])
+}, [amount, phoneNumber2])
 
 
 
@@ -181,7 +181,7 @@ if (res.status === 200) {
 }
 useEffect(()=> {
 
-}, [amount3, phoneNumber3])
+}, [amount, phoneNumber3])
 
 
 
