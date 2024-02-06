@@ -168,8 +168,9 @@ unlimited traffic</span></p>
 {form3 && (
         <>
           <div className="fixed 
-          translate-x-[-15px] max-sm:absolute max-sm:h-screen  
-           inset-0 lg:h-full bg-black bg-opacity-50 backdrop-blur-2xl  z-50 
+          translate-x-[-15px] max-sm:absolute max-sm:min-h-[1024px] 
+           inset-0 lg:h-full bg-black bg-opacity-50 backdrop-blur-2xl
+             z-50  
            w-screen" ></div>
           <section className="absolute w-screen max-sm:flex  top-1/2 
           left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 ">
@@ -187,7 +188,7 @@ unlimited traffic</span></p>
 
 {form2 && (
         <>
-          <div className="fixed translate-x-[-15px] max-sm:absolute max-sm:h-screen  
+          <div className="fixed translate-x-[-15px] max-sm:absolute max-sm:min-h-[1024px]
            inset-0 lg:h-full bg-black bg-opacity-50 backdrop-blur-2xl  z-50 
            w-screen" ></div>
           <section className="absolute w-screen max-sm:flex  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 ">
@@ -200,7 +201,7 @@ unlimited traffic</span></p>
 
 {form && (
         <>
-          <div className="fixed translate-x-[-15px] max-sm:absolute max-sm:h-screen  
+          <div className="fixed translate-x-[-15px] max-sm:absolute max-sm:min-h-[1024px]  
            inset-0 lg:h-full bg-black bg-opacity-50 backdrop-blur-2xl  z-50 
            w-screen" ></div>
           <section className="absolute w-screen max-sm:flex  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 ">
