@@ -45,7 +45,7 @@ const WifiPackageCards = () => {
 </div>
 
 <div className='lg:translate-y-[-350px]   md:translate-y-[-200px]   
-shadow-2xl bg-white  max-sm:translate-y-[-280px]
+shadow-2xl bg-white  max-sm:translate-y-[-190px]
 w-[150px] h-35 flex flex-col justify-center items-center relative z-40 bottom-9 m-auto google-font  '>
 
 <h1 className='text-sm text-cyan-300 font-bold lg:text-xl '>Basic</h1>
@@ -55,7 +55,8 @@ className='text-primary-content'>mbs  <br />unlimited traffic</span></p>
 </div>
 
 
-<div className='w-full flex justify-center flex-col md:translate-y-[-390px] lg:translate-y-[-550px] max-sm:translate-y-[70px]'>
+<div className='w-full flex justify-center flex-col md:translate-y-[-390px] lg:translate-y-[-550px] 
+max-sm:translate-y-[150px]'>
 <p className='   md:translate-y-[190px]  translate-y-[-350px]  
  text-sm w-auto m-auto font-montserrat font-semibold hover:text-4xl duration-300 text-primary-content'>20 bob</p>
 <button className={` md:translate-y-[190px]   translate-y-[-350px]  sm:translate-y-[-240px]   border-2 w-[80px]
@@ -82,7 +83,8 @@ className='text-primary-content'>mbs  <br />unlimited traffic</span></p>
 
 <div className=' md:translate-y-[-180px]    lg:translate-y-[-350px]  sm:translate-y-[-120px]  
   shadow-2xl bg-white w-[150px] h-35 flex flex-col justify-center items-center relative 
-  z-40 bottom-9 m-auto  max-sm:translate-y-[-300px]'>
+  z-40 bottom-9 m-auto 
+   max-sm:translate-y-[-230px]'>
 
 <h1 className='text-sm text-cyan-300  lg:text-xl   font-bold google-font'>Platinum</h1>
 <hr className='border-2 w-20 mx-auto border-gray-300'/>
@@ -91,12 +93,17 @@ className='text-primary-content'>mbs  <br />unlimited traffic</span></p>
 unlimited traffic</span></p>
 </div >
 
-<div className='md:translate-y-[-15px] lg:translate-y-[-180px]  max-sm:translate-y-[-100px]'>
+<div className='md:translate-y-[-15px] lg:translate-y-[-180px] 
+ max-sm:translate-y-[-150px]'>
 
 <div className='w-full flex justify-center'>
 
 <p className=' md:translate-y-[-120px]    lg:translate-y-[-190px]  
-  text-sm w-auto  font-montserrat font-semibold hover:text-4xl duration-300 text-white'>30 bob</p>
+  text-sm w-auto 
+   font-montserrat 
+   font-semibold hover:text-4xl
+    duration-300 text-white 
+    max-sm:translate-y-[-90px]'>30 bob</p>
 
 
 </div>
@@ -104,7 +111,7 @@ unlimited traffic</span></p>
 <div className='w-full flex'>
   
   <button className='   md:translate-y-[-190px]    translate-y-[-350px] 
-   max-sm:translate-y-[-240px]   border-2 w-[80px] h-8 text-sm mx-auto rounded-lg ring-cyan-200
+   max-sm:translate-y-[-80px]   border-2 w-[80px] h-8 text-sm mx-auto rounded-lg ring-cyan-200
     ring-2 hover:ring-black  text-white' onClick={handleForm2}>buy now</button>
 </div>
 
@@ -121,9 +128,10 @@ unlimited traffic</span></p>
 
 
         <Lottie   animationData={wifi} className=' md:translate-y-[-50px]  
-           max-sm:translate-y-[-130px]    lg:translate-y-[-140px] w-full  max-sm:w-full ' />
+           max-sm:translate-y-[-80px]    lg:translate-y-[-140px] w-full  max-sm:w-full ' />
 
-<div className='md:translate-y-[-150px]     lg:translate-y-[-350px]     max-sm:translate-y-[-280px]  
+<div className='md:translate-y-[-150px]     lg:translate-y-[-350px]  
+   max-sm:translate-y-[-220px]  
  shadow-2xl bg-white w-[150px] h-35 flex flex-col justify-center items-center relative z-40 bottom-9 m-auto '>
 
 <h1 className='text-sm text-cyan-300 lg:text-xl google-font   font-bold'>Premium</h1>
@@ -159,10 +167,12 @@ unlimited traffic</span></p>
 
 {form3 && (
         <>
-          <div className="fixed translate-x-[-15px] max-sm:absolute max-sm:h-screen  
+          <div className="fixed 
+          translate-x-[-15px] max-sm:absolute max-sm:h-screen  
            inset-0 lg:h-full bg-black bg-opacity-50 backdrop-blur-2xl  z-50 
            w-screen" ></div>
-          <section className="absolute w-screen max-sm:flex  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 ">
+          <section className="absolute w-screen max-sm:flex  top-1/2 
+          left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 ">
             <Form3  />
           </section>
         </>

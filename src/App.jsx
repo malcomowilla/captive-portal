@@ -12,9 +12,7 @@ const [error, setError] = useState(false)
 const [loading, setLoading] = useState(false)
 const [hasPaid, sethasPaid] = useState(false)
 const [form2, setForm2] = useState(false)
-const [amount2, setAmount2] = useState('')
 const [phoneNumber2, setPhoneNumber2] = useState('')
-const [amount3, setAmount3] = useState('')
 const [phoneNumber3, setPhoneNumber3] = useState('')
 const [form3, setForm3] = useState(false)
 
@@ -114,7 +112,6 @@ if (res.status === 200) {
   setLoading(false)
   sethasPaid(true)
   setPhoneNumber2('')
-  setAmount2('')
   
   
 } else {
@@ -164,7 +161,6 @@ if (res.status === 200) {
   setLoading(false)
   sethasPaid(true)
   setPhoneNumber3('')
-  setAmount3('')
   
   
 } else {
