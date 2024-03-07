@@ -15,6 +15,12 @@ const [form2, setForm2] = useState(false)
 const [phoneNumber2, setPhoneNumber2] = useState('')
 const [phoneNumber3, setPhoneNumber3] = useState('')
 const [form3, setForm3] = useState(false)
+const [loading2, setLoading2] = useState(false)
+const [error2, setError2] = useState(false)
+const [hasPaid2, sethasPaid2] = useState(false)
+const [hasPaid3, sethasPaid3] = useState(false)
+
+
 
 const formData = {amount:20,  phone_number:phoneNumber}
 const formData2 = {amount:30,  phone_number:phoneNumber2}
@@ -24,11 +30,12 @@ const formData3 = {amount:50,  phone_number:phoneNumber3}
 // console.log(formData)
 
 
-console.log(formData2)
-console.log(formData3)
+// console.log(formData2)
+// console.log(formData3)
 
 
 useEffect(() => {
+  
 OneSignal.init({
   appId: "2df033aa-8ce1-48bc-b8ad-af4915a86470"
 
@@ -37,7 +44,8 @@ OneSignal.init({
 
 // https://captive-portal5.onrender.com/stk_push
 // http://localhost:3000
-
+const controller = new AbortController();
+  const signal = controller.signal;
 const handleSubmit = async (e)=> {
   e.preventDefault()
   try {
@@ -50,10 +58,12 @@ const handleSubmit = async (e)=> {
       },
       body: JSON.stringify(formData)
 
-    })
+    },
+    {signal})
 
 
-    
+    console.log("Fetching request for formData:", formData);
+
 
     let data = await res.json()
 if (res.status === 200) {
@@ -77,6 +87,9 @@ if (res.status === 200) {
   }
 }
 useEffect(()=> {
+  return () => {
+    controller.abort();
+  };
 
 }, [amount, phoneNumber])
 
@@ -91,7 +104,7 @@ useEffect(()=> {
 const handleSubmit2 = async (e)=> {
   e.preventDefault()
   try {
-    setLoading(true)
+    setLoading2(true)
     sethasPaid(false)
     let res = await fetch('https://captive-portal5.onrender.com/stk_push', {
       method: 'POST',
@@ -100,23 +113,25 @@ const handleSubmit2 = async (e)=> {
       },
       body: JSON.stringify(formData2)
 
-    })
+    },
+    {signal})
 
 
-    
+    console.log("Fetching request for formData:", formData2);
+
 
     let data = await res.json()
 if (res.status === 200) {
-  setError(false)
+  setError2(false)
   console.log(data)
-  setLoading(false)
-  sethasPaid(true)
+  setLoading2(false)
+  sethasPaid2(true)
   setPhoneNumber2('')
   
   
 } else {
   setError(true)
-  sethasPaid(false)
+  sethasPaid2(false)
 
 }
   } catch (error) {
@@ -127,7 +142,9 @@ if (res.status === 200) {
   }
 }
 useEffect(()=> {
-
+  return () => {
+    controller.abort();
+  };
 }, [amount, phoneNumber2])
 
 
@@ -141,7 +158,7 @@ const handleSubmit3 = async (e)=> {
   e.preventDefault()
   try {
     setLoading(true)
-    sethasPaid(false)
+    sethasPaid3(false)
     let res = await fetch('https://captive-portal5.onrender.com/stk_push', {
       method: 'POST',
       headers:{
@@ -149,23 +166,25 @@ const handleSubmit3 = async (e)=> {
       },
       body: JSON.stringify(formData3)
 
-    })
+    },
+    {signal})
 
 
     
+    console.log("Fetching request for formData:", formData);
 
     let data = await res.json()
 if (res.status === 200) {
   setError(false)
   console.log(data)
   setLoading(false)
-  sethasPaid(true)
+  sethasPaid3(true)
   setPhoneNumber3('')
   
   
 } else {
   setError(true)
-  sethasPaid(false)
+  sethasPaid3(false)
 
 }
   } catch (error) {
@@ -176,16 +195,18 @@ if (res.status === 200) {
   }
 }
 useEffect(()=> {
-
+  return () => {
+    controller.abort();
+  };
 }, [amount, phoneNumber3])
 
 
 
   return (
 <main>
-<LoaderContext.Provider value={{loading, hasPaid, error, form, setForm, handleSubmit, phoneNumber, setPhoneNumber,
-    setError, form2, setForm2, handleSubmit2,  phoneNumber2, setPhoneNumber2, sethasPaid,
-    handleSubmit3, phoneNumber3, setPhoneNumber3, form3, setForm3}}>
+<LoaderContext.Provider value={{loading, loading2, hasPaid, error, form, setForm, handleSubmit, phoneNumber, setPhoneNumber,
+    setError, form2, setForm2, handleSubmit2,  phoneNumber2, setPhoneNumber2, sethasPaid, hasPaid2, sethasPaid2,
+    handleSubmit3, phoneNumber3, setPhoneNumber3, form3, setForm3, error2, setError2, hasPaid3, sethasPaid3,}}>
 
 <section className=''>
   <HomePage/>

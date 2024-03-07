@@ -4,9 +4,12 @@ import LoaderContext from '../context/LoaderContext'
 
 
 const Form2 = () => {
-    const {loading, hasPaid, error, form2, setForm2, phoneNumber2,  setPhoneNumber2,
-        handleSubmit2, sethasPaid, setError} = useContext(LoaderContext)
+    const {error2, hasPaid2, form2, setForm2, phoneNumber2,  setPhoneNumber2,
+        handleSubmit2, sethasPaid2,  loading2, setError2, } = useContext(LoaderContext)
         
+
+
+
   return (
     <div className="w-[500px]  aspect-[10/5] m-auto relative  max-sm:top-[200px] flex-1
     shadow-2xl items-center grid justify-center   max-sm:translate-x-[-15px]  rounded-2xl opacity-80">
@@ -28,7 +31,10 @@ x
 
 
 
-{loading && 
+{
+
+
+loading2 && 
 <>
 <p className='google-font max-sm:text-lg lg:text-4xl'>tulia mpesa ikuulizie pin number on your phone......</p>
 <div>
@@ -47,8 +53,8 @@ x
 
 }
 
-{error &&  <>
- <div   onClick={()=>setError(!error) } role="alert" className="alert alert-error">
+{ error2 &&   <>
+ <div   onClick={()=>setError2(!error2) } role="alert" className="alert alert-error">
  <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
  <span>Tulia kidogo, kuna shida mahali....</span>
 </div>
@@ -56,9 +62,9 @@ x
 </>}
 
 
-{hasPaid && 
+{hasPaid2 && 
 
- <div  onClick={()=>sethasPaid(!hasPaid) } role="alert" className="alert alert-success">
+ <div  onClick={()=>sethasPaid2(!hasPaid2) } role="alert" className="alert alert-success">
  <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6"
   fill="none" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
  <span>confirm kwa simu your mpesa pin!</span>
