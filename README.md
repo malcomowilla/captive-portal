@@ -88,8 +88,10 @@ npm run dev
 
 
 
+[Link to Video](/public/screen-20240313-105840.mp4)
+<!-- 
 <figure class="video_container">
  <video controls="true" allowfullscreen="true">
- <source src="./screen-20240313-105840.mp4" type="video/mp4">
+ <source src="/public/screen-20240313-105840.mp4" type="video/mp4">
  </video>
-</figure>
+</figure> -->
