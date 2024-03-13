@@ -106,7 +106,7 @@ const handleSubmit = async (e)=> {
   try {
     setLoading(true)
     sethasPaid(false)
-    let res = await fetch('https://captive-portal5.onrender.com/stk_push', {
+    let res = await fetch('https://captive-portal5.onrender.com', {
       method: 'POST',
       headers:{
         "Content-Type": "application/json"
@@ -161,7 +161,7 @@ const handleSubmit2 = async (e)=> {
   try {
     setLoading2(true)
     sethasPaid(false)
-    let res = await fetch('https://captive-portal5.onrender.com/stk_push', {
+    let res = await fetch('https://captive-portal5.onrender.com', {
       method: 'POST',
       headers:{
         "Content-Type": "application/json"
@@ -214,7 +214,7 @@ const handleSubmit3 = async (e)=> {
   try {
     setLoading(true)
     sethasPaid3(false)
-    let res = await fetch('https://captive-portal5.onrender.com/stk_push', {
+    let res = await fetch('https://captive-portal5.onrender.com', {
       method: 'POST',
       headers:{
         "Content-Type": "application/json"
