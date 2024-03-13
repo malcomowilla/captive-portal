@@ -11,8 +11,7 @@ My Captive Portal is a website designed for users connecting to a MikroTik hotsp
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Preview](#preview)
 
 
 
@@ -32,6 +31,7 @@ A captive portal is a webpage that the user of a public network is required to v
 
 * A mikrotik router
 
+![Mikrotik Router](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFWapJMHCaGudaA4yq8eVjtxAJH4gEBj_clA&usqp=CAU)
 
 
 
@@ -81,3 +81,15 @@ npm install
 ```bash
 npm run dev
 ```
+
+## Usage
+
+#### Let me demonstrate how intergrated this application with a mikrotik router so that it can be used as a captive portal for interactive payment
+
+
+
+<figure class="video_container">
+ <video controls="true" allowfullscreen="true">
+ <source src="./screen-20240313-105840.mp4" type="video/mp4">
+ </video>
+</figure>

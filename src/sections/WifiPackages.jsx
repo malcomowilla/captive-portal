@@ -6,6 +6,8 @@ import WifiPackageCards from "../components/WifiPackageCards"
 
 
 const WifiPackages = () => {
+
+  
   return (
 
 <section className=''   >
