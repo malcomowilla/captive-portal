@@ -27,8 +27,8 @@ A captive portal is a webpage that the user of a public network is required to v
 
 - Technologies i used for this project
 
-[![My Skills](file:///home/malc0m0willa/Pictures/screen-20240313-142806.mp4
-)
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,react,tailwind,rails)](https://skillicons.dev)
+
 
 * A mikrotik router
 
@@ -87,7 +87,9 @@ npm run dev
 
 #### Let me demonstrate how intergrated this application with a mikrotik router so that it can be used as a captive portal for interactive payment
 
-### Preview
+## Preview
+
+
  <video controls="true" allowfullscreen="true">
  <source src="./screen-20240313-142806.mp4" type="video/mp4">
  </video>
