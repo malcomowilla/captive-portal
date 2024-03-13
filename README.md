@@ -87,11 +87,10 @@ npm run dev
 
 #### Let me demonstrate how intergrated this application with a mikrotik router so that it can be used as a captive portal for interactive payment
 
-
+### Preview
  <video controls="true" allowfullscreen="true">
- <source src="/screen-20240313-105840.mp4" type="video/mp4">
+ <source src="./screen-20240313-142806.mp4" type="video/mp4">
  </video>
 
 
-[Link to Video](/public/screen-20240313-105840.mp4)
 
