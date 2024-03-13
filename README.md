@@ -27,7 +27,8 @@ A captive portal is a webpage that the user of a public network is required to v
 
 - Technologies i used for this project
 
-[![My Skills](https://skillicons.dev/icons?i=js,react,html,css,rails,tailwind,vite)](https://skillicons.dev)
+[![My Skills](file:///home/malc0m0willa/Pictures/screen-20240313-142806.mp4
+)
 
 * A mikrotik router
 
